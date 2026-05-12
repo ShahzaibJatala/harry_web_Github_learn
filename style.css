@@ -1,0 +1,19 @@
+/* Initially, the image is below the viewport */
+img {
+    opacity: 0; /* Start with the image invisible */
+    transform: translateY(100px); /* Start position: 100px below the normal position */
+    animation: slideUp 1s forwards; /* Apply the 'slideUp' animation */
+  }
+  
+  /* Define the keyframes for the slide-up animation */
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100px); /* Start from 100px below */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* End at the normal position */
+    }
+  }
+  
